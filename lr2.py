@@ -1,5 +1,5 @@
-def print_ascii_codes(name, surname):
-    full_name = name + " " + surname
+def print_ascii_codes(*parts):
+    full_name = " ".join(parts)
     for char in full_name:
         if char == " ":
             print()  
@@ -10,4 +10,9 @@ def print_ascii_codes(name, surname):
         print(f"16: {hex(ord(char))[2:].upper()}")
         print()
 
-print_ascii_codes("Kuzmynskiy", "Kirill")
+# Пример с 4 именами и 4 фамилиями:
+print_ascii_codes(
+    "Kuzmynskiy", "Kirill",
+    "Bulavka", "Oleksandr",
+    "", "",
+)
