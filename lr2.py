@@ -10,7 +10,6 @@ def print_ascii_codes(*parts):
         print(f"16: {hex(ord(char))[2:].upper()}")
         print()
 
-# Пример с 4 именами и 4 фамилиями:
 print_ascii_codes(
     "Kuzmynskiy", "Kirill",
     "Bulavka", "Oleksandr",
@@ -26,7 +25,6 @@ print_ascii_codes(
         print(f"16: {hex(ord(char))[2:].upper()}")
         print()
 
-# Пример с 4 именами и 4 фамилиями:
 print_ascii_codes(
     "Kuzmynskiy", "Kirill",
     "Bulavka", "Oleksandr",
@@ -34,4 +32,5 @@ print_ascii_codes(
 )
 
 )
+
 
